@@ -1,71 +1,72 @@
 import 'package:flutter/material.dart';
-class Projects extends StatelessWidget {
-  // Replace this list with your own data
+
+class ProjectsGrid extends StatelessWidget {
+  final int itemsPerRow;
   final List<Map<String, String>> myItems = [
     {
       'title': 'Project 1',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      'description':
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
       'title': 'Project 2',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
-      'title': 'Project 2',
+      'title': 'Project 4',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
-      'title': 'Project 2',
+      'title': 'Project 5',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
-      'title': 'Project 2',
+      'title': 'Project 6',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
-      'title': 'Project 2',
+      'title': 'Project 7',
       'imageUrl': 'https://placehold.co/600x400/png',
-      'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      'title': 'Project 8',
+      'imageUrl': 'https://placehold.co/600x400/png',
+      'description':
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     // Add more items as needed
   ];
 
+  ProjectsGrid({super.key, required this.itemsPerRow});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Responsive Flutter Grid'),
+    return GridView.builder(
+      shrinkWrap: true,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: itemsPerRow,
+        crossAxisSpacing: 8,
+        mainAxisSpacing: 8,
       ),
-      body: OrientationBuilder(
-        builder: (context, orientation) {
-          // Adjust the number of columns based on orientation
-          int columns = (orientation == Orientation.portrait) ? 2 : 3;
-
-          return GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: columns,
-              crossAxisSpacing: 8.0,
-              mainAxisSpacing: 8.0,
-            ),
-            itemCount: myItems.length,
-            itemBuilder: (context, index) {
-              return GridItem(
-                title: myItems[index]['title']!,
-                imageUrl: myItems[index]['imageUrl']!,
-                description: myItems[index]['description']!,
-              );
-            },
-          );
-        },
-      ),
+      itemCount: myItems.length, // Adjust the number based on your projects
+      itemBuilder: (BuildContext context, int index) {
+        return GridItem(title: myItems[index]['title']!, imageUrl: myItems[index]['imageUrl']!, description: myItems[index]['description']!);
+      },
     );
   }
 }
+
 
 class GridItem extends StatelessWidget {
   final String title;
@@ -125,8 +126,8 @@ class GridItem extends StatelessWidget {
 
   String _truncateDescription(String description) {
     // Adjust the length as needed
-    return (description.length > 200)
-        ? '${description.substring(0, 200)}...'
+    return (description.length > 100)
+        ? '${description.substring(0, 100)}...'
         : description;
   }
 }
