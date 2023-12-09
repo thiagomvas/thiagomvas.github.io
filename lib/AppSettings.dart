@@ -11,7 +11,7 @@ class AppSettings {
     "Game Developer",
     "Computer Science Undergrad"
   ];
-  static const String aboutMe = "Lorem Ipsum";
+  static const String aboutMe = "I'm Thiago Menezes Vasconcelos, a Computer Science undergrad at Federal University of Sergipe (UFS), passionate about software and game development, automation, and creating tools that make a difference. With a strong foundation in C# and a keen interest in various technologies, I thrive on turning ideas into reality through coding. Explore my portfolio to discover the projects that showcase my dedication to innovation and problem-solving.";
 
   static List<Skill> skills = [
     Skill("C#", "icons/csharp.svg"),
