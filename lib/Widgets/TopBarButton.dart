@@ -26,7 +26,12 @@ class _TopBarButtonState extends State<TopBarButton> {
               width: 150,
               height: 50,
               child: Center(
-                child: Text(widget.text, style: AppTheme.topBarButtonTextStyle),
+                child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Text("< ", style: AppTheme.topBarButtonSecondaryTextStyle),
+                  Text(widget.text, style: AppTheme.topBarButtonTextStyle),
+                  Text(" />", style: AppTheme.topBarButtonSecondaryTextStyle),
+                ]),
               ),
             ),
             AnimatedContainer(

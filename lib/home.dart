@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/AppTheme.dart';
 import 'package:portfolio/Widgets/TopBarButton.dart';
-import 'package:portfolio/hero.dart';
+import 'package:portfolio/Widgets/hero.dart';
 import 'package:portfolio/projects.dart';
 
 class HomePage extends StatelessWidget {
@@ -32,10 +32,10 @@ class HomePage extends StatelessWidget {
           children: [
             Padding(padding: EdgeInsets.only(top: 15)),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              TopBarButton(onPressed: () {}, text: "<Home/>"),
-              TopBarButton(onPressed: () {}, text: "<About/>"),
-              TopBarButton(onPressed: () {}, text: "<Projects/>"),
-              TopBarButton(onPressed: () {}, text: "<Contact/>"),
+              TopBarButton(onPressed: () {}, text: "Home"),
+              TopBarButton(onPressed: () {}, text: "About"),
+              TopBarButton(onPressed: () {}, text: "Projects"),
+              TopBarButton(onPressed: () {}, text: "Contact"),
             ]),
             HeroPage(
               orientation: orientation,

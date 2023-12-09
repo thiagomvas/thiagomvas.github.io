@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:portfolio/AppTheme.dart';
+import 'package:portfolio/Widgets/CustomIconButton.dart';
 
 class HeroPage extends StatelessWidget {
   final Orientation orientation;
@@ -48,7 +49,7 @@ class Title extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(padding: EdgeInsets.only(top: 150)),
-        Text("Hi there!", style: AppTheme.getH2TextStyle(orientation)),
+        Text("Hi there! 👋", style: AppTheme.getH2TextStyle(orientation)),
         Row(
           children: [
             Text("My name is ", style: AppTheme.getH2TextStyle(orientation)),
@@ -75,6 +76,12 @@ class Title extends StatelessWidget {
             ),
           ],
         ),
+        Row(
+          children: [
+            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "../assets/icons/github.png", onPressed: () {}),
+            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "../assets/icons/linkedin.png", onPressed: () {}),
+          ],
+        )
       ],
     );
   }

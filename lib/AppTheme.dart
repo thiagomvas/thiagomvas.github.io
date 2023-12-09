@@ -9,11 +9,21 @@ class AppTheme {
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
-
+  static TextStyle topBarButtonSecondaryTextStyle = TextStyle(
+    color: Colors.grey[600],
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+  static double getIconButtonSize(Orientation ori) => ori == Orientation.landscape ? 40 : 30;
   static TextStyle getTitleTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.titleTextStyle : AppTheme.mobileTitleTextStyle;
   static TextStyle getH1TextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.h1TextStyle : AppTheme.mobileH1TextStyle;
   static TextStyle getH2TextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.h2TextStyle : AppTheme.mobileH2TextStyle;
   static TextStyle getNameTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.nameTextStyle : AppTheme.mobileNameTextStyle;
+
+  static const TextStyle tooltipTextStyle = TextStyle(
+    color: primaryColor,
+    fontSize: 14,
+  );
 
   static const TextStyle titleTextStyle = TextStyle(
     color: primaryColor,
