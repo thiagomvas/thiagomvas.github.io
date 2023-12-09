@@ -63484,7 +63484,7 @@ m=A.nN(A.a([m,A.jO("Thiago M. Vasconcelos",q,q,o?B.IJ:B.ve,q)],l),B.b9,B.ba)
 s=A.jO("And I'm a ",q,q,o?B.i1:B.i2,q)
 o=o?B.ve:B.IK
 r=A.bQ(0,1500)
-return A.zt(A.a([new A.h7(new A.bh(0,150,0,0),q,q),n,m,A.nN(A.a([s,A.On(new A.pE(A.a([A.a7q("Computer Science Undergrad"),A.a7q("Game Developer"),A.a7q("Software Developer")],t.u6),r,!0,q),q,B.bw,!0,o,q,q,B.aH)],l),B.b9,B.ba),A.nN(A.a([new A.qi("GitHub","assets/icons/github.png",p,q),new A.qi("LinkedIn","assets/icons/linkedin.png",p,q)],l),B.b9,B.ba)],l),B.dm,B.b9)}}
+return A.zt(A.a([new A.h7(new A.bh(0,150,0,0),q,q),n,m,A.nN(A.a([s,A.On(new A.pE(A.a([A.a7q("Computer Science Undergrad"),A.a7q("Game Developer"),A.a7q("Software Developer")],t.u6),r,!0,q),q,B.bw,!0,o,q,q,B.aH)],l),B.b9,B.ba),A.nN(A.a([new A.qi("GitHub","icons/github.png",p,q),new A.qi("LinkedIn","icons/linkedin.png",p,q)],l),B.b9,B.ba)],l),B.dm,B.b9)}}
 A.AS.prototype={
 U(a){return new A.u3(new A.tg(new A.Rf(),null),B.xQ,null)}}
 A.Rf.prototype={
