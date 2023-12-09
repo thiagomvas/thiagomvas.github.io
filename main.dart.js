@@ -77930,8 +77930,8 @@ return A.l8(A.avo(A.asj(A.a([$.aqJ(),$.aqO()],A.a0("p<a6<cR>>")),null,q),q),A.aC
 s($,"aGr","aqI",()=>{var q=t.ob,p=A.a0("d2")
 return A.akE(A.awf(A.auW(A.agJ("^",null),t.N),$.aqL(),q,p),new A.acF(),q,p,p)})
 s($,"aEf","adU",()=>A.ajb())
-r($,"aDb","ahl",()=>A.a([A.iP("C#","icons/csharp.svg"),A.iP("Dart","icons/dart.svg"),A.iP("HTML","icons/html5.svg"),A.iP("CSS","icons/css3.svg"),A.iP("JavaScript","icons/javascript.svg"),A.iP("C","icons/c.svg")],A.a0("p<xD>")))
-r($,"aDc","ahm",()=>A.a([A.iP(".NET","icons/dotnet.svg"),A.iP("Flutter","icons/flutter.svg"),A.iP("Unity","icons/unity.svg"),A.iP("MongoDB","icons/mongodb.svg"),A.iP("Git","icons/git.svg")],A.a0("p<xD>")))
+r($,"aDb","ahl",()=>A.a([A.iP("C#","assets/icons/csharp.svg"),A.iP("Dart","assets/icons/dart.svg"),A.iP("HTML","assets/icons/html5.svg"),A.iP("CSS","assets/icons/css3.svg"),A.iP("JavaScript","assets/icons/javascript.svg"),A.iP("C","assets/icons/c.svg")],A.a0("p<xD>")))
+r($,"aDc","ahm",()=>A.a([A.iP(".NET","assets/icons/dotnet.svg"),A.iP("Flutter","assets/icons/flutter.svg"),A.iP("Unity","assets/icons/unity.svg"),A.iP("MongoDB","assets/icons/mongodb.svg"),A.iP("Git","assets/icons/git.svg")],A.a0("p<xD>")))
 r($,"aDa","ahk",()=>{var q="https://placehold.co/600x400/png"
 return A.a([A.akA("Project 1","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",q),A.akA("Project 2","Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",q)],A.a0("p<H5>"))})
 r($,"aDe","aho",()=>{var q=null
