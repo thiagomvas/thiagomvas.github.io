@@ -78,8 +78,8 @@ class Title extends StatelessWidget {
         ),
         Row(
           children: [
-            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "icons/github.png", onPressed: () {}),
-            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "icons/linkedin.png", onPressed: () {}),
+            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "assets/icons/github.png", onPressed: () {}),
+            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "assets/icons/linkedin.png", onPressed: () {}),
           ],
         )
       ],
