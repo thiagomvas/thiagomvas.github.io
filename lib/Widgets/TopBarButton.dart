@@ -4,8 +4,9 @@ import 'package:portfolio/AppTheme.dart';
 class TopBarButton extends StatefulWidget {
   final VoidCallback onPressed;
   final String text;
+  final Orientation orientation;
   bool isHovered = false;
-  TopBarButton({required this.onPressed, required this.text});
+  TopBarButton({required this.onPressed, required this.text, required this.orientation});
 
   @override
   State<TopBarButton> createState() => _TopBarButtonState();
@@ -23,14 +24,14 @@ class _TopBarButtonState extends State<TopBarButton> {
         child: Column(
           children: [
             Container(
-              width: 150,
+              width: widget.orientation == Orientation.landscape ? 150 : 85,
               height: 50,
               child: Center(
                 child: Row(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                  Text("< ", style: AppTheme.topBarButtonSecondaryTextStyle),
-                  Text(widget.text, style: AppTheme.topBarButtonTextStyle),
-                  Text(" />", style: AppTheme.topBarButtonSecondaryTextStyle),
+                  Text("< ", style: AppTheme.getTopbarButtonSecondaryTextStyle(widget.orientation)),
+                  Text(widget.text, style: AppTheme.getTopbarButtonTextStyle(widget.orientation)),
+                  Text(" />", style: AppTheme.getTopbarButtonSecondaryTextStyle(widget.orientation)),
                 ]),
               ),
             ),

@@ -1,4 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:portfolio/Project.dart';
+import 'package:portfolio/Skill.dart';
+import 'package:portfolio/Widgets/ContentItem.dart';
 
 class AppSettings {
   static const String title = "Portfolio";
@@ -7,6 +10,24 @@ class AppSettings {
     "Software Developer",
     "Game Developer",
     "Computer Science Undergrad"
+  ];
+  static const String aboutMe = "Lorem Ipsum";
+
+  static List<Skill> skills = [
+    Skill("C#", "icons/csharp.svg"),
+    Skill("Dart", "icons/dart.svg"),
+    Skill("HTML", "icons/html5.svg"),
+    Skill("CSS", "icons/css3.svg"),
+    Skill("JavaScript", "icons/javascript.svg"),
+    Skill("C", "icons/c.svg"),
+  ];
+
+  static List<Skill> technologies = [
+    Skill(".NET", "icons/dotnet.svg"),
+    Skill("Flutter", "icons/flutter.svg"),
+    Skill("Unity", "icons/unity.svg"),
+    Skill("MongoDB", "icons/mongodb.svg"),
+    Skill("Git", "icons/git.svg"),
   ];
 
   static List<Project> projects = [
@@ -24,4 +45,58 @@ class AppSettings {
   static const String githubUrl = "https://github.com/thiagomvas";
   static const String linkedinUrl =
       "https://www.linkedin.com/in/thiago-m-vasconcelos/";
+
+  static Column GenerateSkillsGrid(int itemsPerRow, Orientation orientation)
+  {
+      List<Row> rows = [];
+      
+      for (int i = 0; i < skills.length; i += itemsPerRow)
+      {
+        List<Widget> rowItems = [];
+        for (int j = 0; j < itemsPerRow; j++)
+        {
+          if (i + j < skills.length)
+          {
+            rowItems.add(ContentItemSvg(
+              iconUrl: skills[i + j].iconUrl,
+              title: skills[i + j].name,
+              orientation: orientation,
+            ));
+          }
+        }
+        rows.add(Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: rowItems,
+        ));
+      }
+
+      return Column(children: rows);
+  }
+
+    static Column GenerateGrid(List<Skill> data, int itemsPerRow, Orientation orientation)
+  {
+      List<Row> rows = [];
+      
+      for (int i = 0; i < data.length; i += itemsPerRow)
+      {
+        List<Widget> rowItems = [];
+        for (int j = 0; j < itemsPerRow; j++)
+        {
+          if (i + j < data.length)
+          {
+            rowItems.add(ContentItemSvg(
+              iconUrl: data[i + j].iconUrl,
+              title: data[i + j].name,
+              orientation: orientation,
+            ));
+          }
+        }
+        rows.add(Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: rowItems,
+        ));
+      }
+
+      return Column(children: rows);
+  }
 }

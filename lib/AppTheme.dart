@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static const Color primaryColor = Color(0xFFBE3144);
   static const Color secondaryColor = Color(0xFF872341);
+  static const Color accentColor = Color(0xFFF05941);
   static const Color backgroundColor = Color(0xFF22092C);
   static const TextStyle topBarButtonTextStyle = TextStyle(
     color: Colors.white,
@@ -19,10 +20,22 @@ class AppTheme {
   static TextStyle getH1TextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.h1TextStyle : AppTheme.mobileH1TextStyle;
   static TextStyle getH2TextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.h2TextStyle : AppTheme.mobileH2TextStyle;
   static TextStyle getNameTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.nameTextStyle : AppTheme.mobileNameTextStyle;
+  static TextStyle getTopbarButtonTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.topBarButtonTextStyle : AppTheme.mobileTopBarButtonTextStyle;
+  static TextStyle getTopbarButtonSecondaryTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.topBarButtonSecondaryTextStyle : AppTheme.mobileTopBarButtonSecondaryTextStyle;
 
   static const TextStyle tooltipTextStyle = TextStyle(
     color: primaryColor,
     fontSize: 14,
+  );
+  static const TextStyle contentItemTextStyle = TextStyle(
+    color: primaryColor,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle contentTabTextStyle = TextStyle(
+    color: accentColor,
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
   );
 
   static const TextStyle titleTextStyle = TextStyle(
@@ -50,6 +63,11 @@ class AppTheme {
   static const TextStyle mobileTopBarButtonTextStyle = TextStyle(
     color: Colors.white,
     fontSize: 14,
+  );
+  static TextStyle mobileTopBarButtonSecondaryTextStyle = TextStyle(
+    color: Colors.grey[600],
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
   );
   static const TextStyle mobileTitleTextStyle = TextStyle(
     color: primaryColor,
