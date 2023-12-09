@@ -30,16 +30,16 @@ class HomePage extends StatelessWidget {
         int crossAxisCount = (orientation == Orientation.portrait) ? 2 : 3;
         return ListView(
           children: [
-            Row(children: 
-            [
-              Spacer(flex: 1),
-              TopBarButton(onPressed: () {}, text: "Test"),
-              Spacer(flex: 10),
-              TopBarButton(onPressed: () {}, text: "Test"),
-              TopBarButton(onPressed: () {}, text: "Test"),
-              Spacer(flex: 1),
+            Padding(padding: EdgeInsets.only(top: 15)),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              TopBarButton(onPressed: () {}, text: "<Home/>"),
+              TopBarButton(onPressed: () {}, text: "<About/>"),
+              TopBarButton(onPressed: () {}, text: "<Projects/>"),
+              TopBarButton(onPressed: () {}, text: "<Contact/>"),
             ]),
-            HeroPage(),
+            HeroPage(
+              orientation: orientation,
+            ),
             Container(height: 250),
             ProjectsGrid(
               itemsPerRow: crossAxisCount,

@@ -15,36 +15,6 @@ class ProjectsGrid extends StatelessWidget {
       'description':
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
-    {
-      'title': 'Project 4',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-      'title': 'Project 5',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-      'title': 'Project 6',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-      'title': 'Project 7',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-      'title': 'Project 8',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
     // Add more items as needed
   ];
 

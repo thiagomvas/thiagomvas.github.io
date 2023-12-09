@@ -23,7 +23,7 @@ class _TopBarButtonState extends State<TopBarButton> {
         child: Column(
           children: [
             Container(
-              width: 75,
+              width: 150,
               height: 50,
               child: Center(
                 child: Text(widget.text, style: AppTheme.topBarButtonTextStyle),
@@ -37,38 +37,6 @@ class _TopBarButtonState extends State<TopBarButton> {
             )
           ],
         ),
-      ),
-    );
-  }
-}
-
-class TopBarButton2 extends StatelessWidget {
-  final VoidCallback onPressed;
-  final String text;
-  bool isHovered = false;
-  TopBarButton2({required this.onPressed, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onHover: (event) => isHovered = true,
-      onExit: (event) => isHovered = false,
-      child: Column(
-        children: [
-          Container(
-            width: 100,
-            height: 50,
-            child: Center(
-              child: Text(text),
-            ),
-          ),
-          Container(
-            width: 100,
-            height: 200,
-            color: isHovered ? Colors.white : Colors.red,
-          )
-        ],
       ),
     );
   }
