@@ -14,20 +14,20 @@ class AppSettings {
   static const String aboutMe = "I'm Thiago Menezes Vasconcelos, a Computer Science undergrad at Federal University of Sergipe (UFS), passionate about software and game development, automation, and creating tools that make a difference. With a strong foundation in C# and a keen interest in various technologies, I thrive on turning ideas into reality through coding. Explore my portfolio to discover the projects that showcase my dedication to innovation and problem-solving.";
 
   static List<Skill> skills = [
-    Skill("C#", "icons/csharp.svg"),
-    Skill("Dart", "icons/dart.svg"),
-    Skill("HTML", "icons/html5.svg"),
-    Skill("CSS", "icons/css3.svg"),
-    Skill("JavaScript", "icons/javascript.svg"),
-    Skill("C", "icons/c.svg"),
+    Skill("C#", "assets/icons/csharp.svg"),
+    Skill("Dart", "assets/icons/dart.svg"),
+    Skill("HTML", "assets/icons/html5.svg"),
+    Skill("CSS", "assets/icons/css3.svg"),
+    Skill("JavaScript", "assets/icons/javascript.svg"),
+    Skill("C", "assets/icons/c.svg"),
   ];
 
   static List<Skill> technologies = [
-    Skill(".NET", "icons/dotnet.svg"),
-    Skill("Flutter", "icons/flutter.svg"),
-    Skill("Unity", "icons/unity.svg"),
-    Skill("MongoDB", "icons/mongodb.svg"),
-    Skill("Git", "icons/git.svg"),
+    Skill(".NET", "assets/icons/dotnet.svg"),
+    Skill("Flutter", "assets/icons/flutter.svg"),
+    Skill("Unity", "assets/icons/unity.svg"),
+    Skill("MongoDB", "assets/icons/mongodb.svg"),
+    Skill("Git", "assets/icons/git.svg"),
   ];
 
   static List<Project> projects = [
