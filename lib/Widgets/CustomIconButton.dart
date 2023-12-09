@@ -27,11 +27,8 @@ class CustomIconButton extends StatelessWidget {
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
         onPressed: () {},
-        icon: Image.asset(
-          iconPath,
-          width: AppTheme.getIconButtonSize(orientation),
+        icon: Image(image: AssetImage(iconPath), width: AppTheme.getIconButtonSize(orientation),),
         ),
-      ),
-    );
+      );
   }
 }
