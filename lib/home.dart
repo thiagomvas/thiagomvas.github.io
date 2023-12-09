@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
         // Calculate crossAxisCount based on screen width
         int crossAxisCount = (orientation == Orientation.portrait) ? 2 : 3;
         return ListView(
+          physics: BouncingScrollPhysics(),
           children: [
             Padding(padding: EdgeInsets.only(top: 15)),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -26,11 +27,12 @@ class HomePage extends StatelessWidget {
             HeroPage(
               orientation: orientation,
             ),
-            AboutMe(orientation: orientation,),
             Container(height: 250),
+            AboutMe(orientation: orientation,),
             ProjectsGrid(
               itemsPerRow: crossAxisCount,
             ),
+            Container(height: 250),
           ],
         );
       }),
