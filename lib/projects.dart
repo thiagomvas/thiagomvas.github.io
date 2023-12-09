@@ -1,22 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/AppSettings.dart';
 
 class ProjectsGrid extends StatelessWidget {
   final int itemsPerRow;
-  final List<Map<String, String>> myItems = [
-    {
-      'title': 'Project 1',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      'title': 'Project 2',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    // Add more items as needed
-  ];
 
   ProjectsGrid({super.key, required this.itemsPerRow});
 
@@ -29,14 +15,18 @@ class ProjectsGrid extends StatelessWidget {
         crossAxisSpacing: 8,
         mainAxisSpacing: 8,
       ),
-      itemCount: myItems.length, // Adjust the number based on your projects
+      itemCount: AppSettings
+          .projects.length, // Adjust the number based on your projects
       itemBuilder: (BuildContext context, int index) {
-        return GridItem(title: myItems[index]['title']!, imageUrl: myItems[index]['imageUrl']!, description: myItems[index]['description']!);
+        return GridItem(
+          title: AppSettings.projects[index].title,
+          description: AppSettings.projects[index].description,
+          imageUrl: AppSettings.projects[index].imageUrl,
+        );
       },
     );
   }
 }
-
 
 class GridItem extends StatelessWidget {
   final String title;

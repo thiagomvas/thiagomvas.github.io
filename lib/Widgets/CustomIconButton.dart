@@ -10,7 +10,7 @@ class CustomIconButton extends StatelessWidget {
 
   final String text;
   final String iconPath;
-  final Function onPressed;
+  final VoidCallback onPressed;
   final Orientation orientation;
 
   @override
@@ -26,7 +26,7 @@ class CustomIconButton extends StatelessWidget {
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Image(image: AssetImage(iconPath), width: AppTheme.getIconButtonSize(orientation),),
         ),
       );

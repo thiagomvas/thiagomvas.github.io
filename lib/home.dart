@@ -5,21 +5,6 @@ import 'package:portfolio/Widgets/hero.dart';
 import 'package:portfolio/projects.dart';
 
 class HomePage extends StatelessWidget {
-  final List<Map<String, String>> myItems = [
-    {
-      'title': 'Project 1',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      'title': 'Project 2',
-      'imageUrl': 'https://placehold.co/600x400/png',
-      'description':
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    // Add more items as needed
-  ];
 
   @override
   Widget build(BuildContext context) {

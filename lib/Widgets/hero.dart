@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:portfolio/AppSettings.dart';
 import 'package:portfolio/AppTheme.dart';
 import 'package:portfolio/Widgets/CustomIconButton.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HeroPage extends StatelessWidget {
   final Orientation orientation;
   HeroPage({super.key, required this.orientation});
+
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +43,11 @@ class Title extends StatelessWidget {
     super.key,
     required this.orientation,
   });
-
+Future<void> _launchUrl(String url) async {
+  if (!await launchUrl(Uri.parse(url))) {
+    throw Exception('Could not launch $url');
+  }
+}
   Orientation orientation;
 
   @override
@@ -54,7 +61,7 @@ class Title extends StatelessWidget {
           children: [
             Text("My name is ", style: AppTheme.getH2TextStyle(orientation)),
             Text(
-              "Thiago M. Vasconcelos",
+              AppSettings.name,
               style: AppTheme.getNameTextStyle(orientation),
             )
           ],
@@ -67,19 +74,17 @@ class Title extends StatelessWidget {
               child: AnimatedTextKit(
                 pause: Duration(milliseconds: 1500),
                 repeatForever: true,
-                animatedTexts: [
-                  TypewriterAnimatedText("Computer Science Undergrad"),
-                  TypewriterAnimatedText("Game Developer"),
-                  TypewriterAnimatedText("Software Developer"),
-                ],
+                animatedTexts: AppSettings.titles
+                    .map((e) => TyperAnimatedText(e))
+                    .toList(),
               ),
             ),
           ],
         ),
         Row(
           children: [
-            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "assets/icons/github.png", onPressed: () {}),
-            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "assets/icons/linkedin.png", onPressed: () {}),
+            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "assets/icons/github.png", onPressed: () => _launchUrl(AppSettings.githubUrl)),
+            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "assets/icons/linkedin.png", onPressed: () => _launchUrl(AppSettings.linkedinUrl)),
           ],
         )
       ],
