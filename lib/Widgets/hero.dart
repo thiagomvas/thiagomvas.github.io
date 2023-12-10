@@ -43,16 +43,12 @@ class Title extends StatelessWidget {
     super.key,
     required this.orientation,
   });
-Future<void> _launchUrl(String url) async {
-  if (!await launchUrl(Uri.parse(url))) {
-    throw Exception('Could not launch $url');
-  }
-}
   Orientation orientation;
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      key: AppSettings.homeKey,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(padding: EdgeInsets.only(top: 150)),
@@ -83,8 +79,8 @@ Future<void> _launchUrl(String url) async {
         ),
         Row(
           children: [
-            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "assets/icons/github.png", onPressed: () => _launchUrl(AppSettings.githubUrl)),
-            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "assets/icons/linkedin.png", onPressed: () => _launchUrl(AppSettings.linkedinUrl)),
+            CustomIconButton(orientation: orientation, text: 'GitHub', iconPath: "assets/icons/github.png", onPressed: () => AppSettings.LaunchUrl(AppSettings.githubUrl)),
+            CustomIconButton(orientation: orientation, text: 'LinkedIn', iconPath: "assets/icons/linkedin.png", onPressed: () => AppSettings.LaunchUrl(AppSettings.linkedinUrl)),
           ],
         )
       ],

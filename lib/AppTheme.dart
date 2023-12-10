@@ -23,6 +23,16 @@ class AppTheme {
   static TextStyle getTopbarButtonTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.topBarButtonTextStyle : AppTheme.mobileTopBarButtonTextStyle;
   static TextStyle getTopbarButtonSecondaryTextStyle(Orientation ori) => ori == Orientation.landscape ? AppTheme.topBarButtonSecondaryTextStyle : AppTheme.mobileTopBarButtonSecondaryTextStyle;
 
+  static const TextStyle projectTitleTextStyle = TextStyle(
+    color: primaryColor,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle projectDescriptionTextStyle = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+  );
+
   static const TextStyle tooltipTextStyle = TextStyle(
     color: primaryColor,
     fontSize: 14,

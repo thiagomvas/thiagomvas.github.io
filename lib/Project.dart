@@ -2,5 +2,6 @@ class Project {
   String title;
   String description;
   String imageUrl;
-  Project(this.title, this.description, this.imageUrl);
+  String projectLink;
+  Project({required this.title, required this.description, required this.imageUrl, required this.projectLink});
 }
