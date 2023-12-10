@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/AppSettings.dart';
-import 'package:portfolio/widgets/GridItem.dart';
+import 'package:portfolio/Widgets/GridItem.dart';
 
 class ProjectsGrid extends StatelessWidget {
   final int itemsPerRow;
