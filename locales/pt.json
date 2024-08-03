@@ -1,9 +1,33 @@
 {
     "greeting": "Opa!",
+    "nameis": "Me chamo",
+    "iama": "e sou um ",
     "titles": [
         "Programador C#",
         "Desenvolvedor Back End",
         "Estudante de Ciências da Computação",
         "Desenvolvedor de Software"
+    ],
+    "aboutmetitle" : "Sobre mim",
+    "aboutme": "Sou estudante bacharel em Ciências da Computação na Universidade Federal de Sergipe, membro voluntário da SofTeam - Empresa Junior de Computação do DCOMP - UFS. Desenvolvo principalmente utilizando C# e .NET e suas tecnologias, com conhecimento em Dart, C, C++ e JavaScript.",
+    "skillstitle": "Linguagens",
+    "techstitle": "Tecnologias",
+    "skills":  [
+        { "iconUrl": "Assets/csharp.svg", "name": "C#"},
+        { "iconUrl": "Assets/cplusplus.svg", "name": "C++"},
+        { "iconUrl": "Assets/c.svg", "name": "C"},
+        { "iconUrl": "Assets/dart.svg", "name": "Dart"},
+        { "iconUrl": "Assets/html.svg", "name": "HTML"},
+        { "iconUrl": "Assets/css.svg", "name": "CSS"},
+        { "iconUrl": "Assets/javascript.svg", "name": "JavaScript"}
+    ],
+    "technologies": [
+        { "iconUrl": "Assets/dotnet.svg", "name": ".NET"},
+        { "iconUrl": "Assets/blazor.svg", "name": "Blazor"},
+        { "iconUrl": "Assets/dotnet.svg", "name": "ASP.NET"},
+        { "iconUrl": "Assets/azure.svg", "name": "Azure Services"},
+        { "iconUrl": "Assets/flutter.svg", "name": "Flutter"},
+        { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"}
     ]
+    
 }

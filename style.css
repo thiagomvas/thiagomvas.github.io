@@ -148,6 +148,7 @@ body, html {
 
 
 .aboutme-image {
+    min-width: 256px;
   margin-right: 20px;
   position: relative;
   border-radius: 50%;
@@ -160,4 +161,48 @@ body, html {
   max-width: 320px;
   height: 100%;
   object-fit: cover;
+}
+.section.skills {
+    display: flex;
+    gap: 16px; /* Space between the two containers, adjust as needed */
+    height: fit-content;
+}
+
+.skills-container, .techs-container {
+    flex: 1; /* Ensures both containers take up equal space */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted minimum column width */
+    gap: 8px; /* Reduced space between grid items */
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.skills-container h2, .techs-container h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px; /* Adjust font size as needed */
+    color: white; /* Adjust text color as needed */
+    text-align: center; /* Center align text */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Optional: underline for emphasis */
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Adjust spacing between containers as needed */
+}
+
+.skill-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.skill-title {
+    margin-top: 8px; /* Adjust spacing between the image and the title as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: white; /* Adjust text color as needed */
 }

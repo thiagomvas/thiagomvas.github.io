@@ -1,9 +1,8 @@
-let titles = [
-    "Software Developer", 
-    "Computer Science Undergrad", 
-    "C# Developer", 
-    "Back End Developer"
-];
+let titles = [];
+let skills = [];
+let techs = [];
+
+let locale = "";
 
 const languages = {
     en: 'locales/en.json',
@@ -26,18 +25,40 @@ function loadLanguage(lang) {
             return response.json();
         })
         .then(data => {
+            locale = data;
             titles = data.titles;
+            skills = data.skills;
+            techs = data.technologies;
+            console.log(techs);
             document.querySelectorAll('[data-localize]').forEach(element => {
                 const key = element.getAttribute('data-localize');
                 if (data[key]) {
                     element.textContent = data[key];
                 }
             });
+            populateSkills();
+            populateTechs();
         })
         .catch(error => console.error('Error loading language file:', error));
 }
 
-function animateText(selector, delay, interval, n, phrases) {
+
+function populateSkills() {
+    const skillsContainer = document.getElementById('skills-tab');
+
+    skills.forEach(skill => {
+        skillsContainer.innerHTML += skillDiv(skill.iconUrl, skill.name)
+    });
+}
+function populateTechs() {
+    const skillsContainer = document.getElementById('techs-tab');
+
+    techs.forEach(tech => {
+        skillsContainer.innerHTML += skillDiv(tech.iconUrl, tech.name)
+    });
+}
+
+function animateText(selector, delay, interval, n) {
     const element = document.querySelector(selector);
     let currentTitle = element.textContent;
     const characters = '\\\"\'|;:/?.>,<[{]}=+-_0)9(8*7&6^5%4$3#2@1!`~/';
@@ -47,11 +68,15 @@ function animateText(selector, delay, interval, n, phrases) {
     }
 
     function getNextTitle() {
-        return phrases[Math.floor(Math.random() * phrases.length)];
+        return titles[Math.floor(Math.random() * titles.length)];
     }
 
     function animate() {
         let nextTitle = getNextTitle();
+        while(currentTitle == nextTitle)
+        {
+            nextText = getNextTitle()
+        }
         let maxLength = Math.max(currentTitle.length, nextTitle.length);
         let currentText = currentTitle.padEnd(maxLength, ' ').split('');
         let nextText = nextTitle.padEnd(maxLength, ' ').split('');
@@ -94,5 +119,15 @@ function animateText(selector, delay, interval, n, phrases) {
 document.addEventListener('DOMContentLoaded', () => {
     const userLang = getBrowserLanguage();
     loadLanguage(userLang);
-    animateText('#title', 50, 15000, 3, titles);
+    animateText('#title', 30, 15000, 3);
 });
+
+
+const skillDiv = (iconUrl, name) => {
+    return `
+        <div class="skill-container">
+            <img src="${iconUrl}" alt="${name}" class="skill-icon">
+            <div class="skill-title">${name}</div>
+        </div>
+    `;
+}
