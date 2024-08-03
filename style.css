@@ -59,8 +59,25 @@ body, html {
 }
 
 .hero {
-    font-size: 36px;
+    font-size: 2vw;
     white-space: nowrap; /* Prevent line breaks */
+}
+@media (max-width: 1200px) {
+  .hero {
+      font-size: 3vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+      font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      font-size: 4vw;
+  }
 }
 
 .primary {
@@ -123,3 +140,24 @@ body, html {
 }
 
 
+.aboutme-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.aboutme-image {
+  margin-right: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.aboutme-image img {
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  object-fit: cover;
+}

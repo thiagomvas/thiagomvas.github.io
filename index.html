@@ -10,15 +10,15 @@
 </head>
 <body>
     <div class="top-bar">
-        <a href="#section1">&lt;/<span class="primary">About Me</span>&gt;</a>
-        <a href="#section2">&lt;/<span class="primary">Skills</span>&gt;</a>
-        <a href="#section3">&lt;/<span class="primary">Personal Projects</span>&gt;</a>
-        <a href="#section4">&lt;/<span class="primary">Contact</span>&gt;</a>
+        <a href="#aboutme">&lt;/<span class="primary">About Me</span>&gt;</a>
+        <a href="#skills">&lt;/<span class="primary">Skills</span>&gt;</a>
+        <a href="#projects">&lt;/<span class="primary">Personal Projects</span>&gt;</a>
+        <a href="#contact">&lt;/<span class="primary">Contact</span>&gt;</a>
     </div>
 
     <div class="background">
         <div class="hero">
-            <div>Hi there! 👋</div>
+            <div data-localize="greeting">Hi there! 👋</div>
             <div>My name is <span class="primary">Thiago M. Vasconcelos</span></div>
             <div>and I'm a <span class="primary" id="title">Software Developer</span></div>
 
@@ -37,25 +37,45 @@
         </div>
     </div>
 
-    <div class="content" id="section1">
-        <h2>Section 1</h2>
-        <p>Content for section 1. This is where you can put any information or elements you'd like to include.</p>
+    <div class="content" id="aboutme">
+
+        <div class="aboutme-container">
+            <div class="aboutme-image">
+                <img src="Assets/1700862378277.jfif" alt="About Me">
+            </div>
+            <div class="aboutme-description">
+                <h2>About Me</h2>
+                <p>I'm a C# developer focused on</p>
+            </div>
+        </div>
     </div>
 
-    <div class="section" id="section2">
+    <div class="section" id="skills">
         <h2>Section 2</h2>
         <p>Content for section 2. This section can contain images, text, or any other elements.</p>
     </div>
 
-    <div class="section" id="section3">
+    <div class="section" id="projects">
         <h2>Section 3</h2>
         <p>Content for section 3. Customize this area with your own content.</p>
     </div>
 
-    <div class="section" id="section4">
+    <div class="section" id="contact">
         <h2>Section 4</h2>
         <p>Content for section 4. Add more details or elements to this section.</p>
     </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <defs>
+            <clipPath id="rounded-clip">
+                <!-- Simple circular clip-path -->
+                <circle cx="50%" cy="50%" r="50%" />
+            </clipPath>
+        </defs>
+    </svg>
     <script src="script.js"></script>
+    <script src="locales/en.json"></script>
+    <script src="locales/pt.json"></script>
 </body>
 </html>

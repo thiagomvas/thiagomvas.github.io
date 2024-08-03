@@ -1,7 +1,40 @@
-const titles = ["Software Developer", 
+const titles = [
+    "Software Developer", 
     "Computer Science Undergrad", 
     "C# Developer", 
-    "Back End Developer"];
+    "Back End Developer"
+];
+
+const languages = {
+    en: 'locales/en.json',
+    pt: 'locales/pt.json'
+};
+
+function getBrowserLanguage() {
+    const lang = navigator.language || navigator.userLanguage;
+    return lang.startsWith('pt') ? 'pt' : 'en';
+}
+
+function loadLanguage(lang) {
+    const url = languages[lang];
+    console.log(`Loading language file from: ${url}`);
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.querySelectorAll('[data-localize]').forEach(element => {
+                const key = element.getAttribute('data-localize');
+                if (data[key]) {
+                    element.textContent = data[key];
+                }
+            });
+        })
+        .catch(error => console.error('Error loading language file:', error));
+}
 
 function animateText(selector, delay, interval, n, phrases) {
     const element = document.querySelector(selector);
@@ -42,14 +75,11 @@ function animateText(selector, delay, interval, n, phrases) {
     }
 
     function startAnimation() {
-        // Start the animation immediately
         animate();
-        // Continue animating every interval
         intervalId = setInterval(animate, interval);
     }
 
     function stopAnimation() {
-        // Stop the interval to avoid multiple animations at the same time
         clearInterval(intervalId);
     }
 
@@ -57,10 +87,11 @@ function animateText(selector, delay, interval, n, phrases) {
     element.addEventListener('mouseover', startAnimation);
     element.addEventListener('mouseout', stopAnimation);
 
-    // Start the initial animation
     startAnimation();
 }
 
-
-
-animateText('#title', 50, 15000, 3, titles);
+document.addEventListener('DOMContentLoaded', () => {
+    const userLang = getBrowserLanguage();
+    loadLanguage(userLang);
+    animateText('#title', 50, 15000, 3, titles);
+});
