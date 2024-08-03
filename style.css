@@ -162,14 +162,21 @@ body, html {
   height: 100%;
   object-fit: cover;
 }
+
 .section.skills {
     display: flex;
     gap: 16px; /* Space between the two containers, adjust as needed */
     height: fit-content;
 }
 
+.skills-wrapper, .techs-wrapper {
+    flex: 1; /* Ensures both wrappers take up equal space */
+    display: flex;
+    flex-direction: column; /* Arrange title and grid vertically */
+}
+
 .skills-container, .techs-container {
-    flex: 1; /* Ensures both containers take up equal space */
+    flex: 1; /* Ensure containers take up available space */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted minimum column width */
     gap: 8px; /* Reduced space between grid items */
@@ -178,13 +185,14 @@ body, html {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.skills-container h2, .techs-container h2 {
+.skills-title, .techs-title {
     margin: 0;
     padding: 10px;
     font-size: 24px; /* Adjust font size as needed */
     color: white; /* Adjust text color as needed */
     text-align: center; /* Center align text */
     border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Optional: underline for emphasis */
+    margin-bottom: 10px;
 }
 
 .skill-container {
@@ -206,3 +214,4 @@ body, html {
     font-size: 14px; /* Adjust font size as needed */
     color: white; /* Adjust text color as needed */
 }
+

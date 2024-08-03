@@ -28,6 +28,8 @@
         { "iconUrl": "Assets/azure.svg", "name": "Azure Services"},
         { "iconUrl": "Assets/flutter.svg", "name": "Flutter"},
         { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"}
-    ]
+    ],
+    "projectstitle": "Projetos Pessoais",
+    "contacttitle": "Contato" 
     
 }

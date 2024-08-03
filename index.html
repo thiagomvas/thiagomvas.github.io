@@ -10,10 +10,10 @@
 </head>
 <body>
     <div class="top-bar">
-        <a href="#aboutme">&lt;/<span class="primary">About Me</span>&gt;</a>
-        <a href="#skills">&lt;/<span class="primary">Skills</span>&gt;</a>
-        <a href="#projects">&lt;/<span class="primary">Personal Projects</span>&gt;</a>
-        <a href="#contact">&lt;/<span class="primary">Contact</span>&gt;</a>
+        <a href="#aboutme">&lt;/<span class="primary"><span data-localize="aboutmetitle"></span></span>&gt;</a>
+        <a href="#skills">&lt;/<span class="primary"><span data-localize="skillstitle"></span></span>&gt;</a>
+        <a href="#projects">&lt;/<span class="primary"><span data-localize="projectstitle"></span></span>&gt;</a>
+        <a href="#contact">&lt;/<span class="primary"><span data-localize="contacttitle"></span></span>&gt;</a>
     </div>
 
     <div class="background">
@@ -51,9 +51,16 @@
     </div>
 
     <div class="section skills" id="skills">
-        <div class="skills-container" id="skills-tab"></div>
-        <div class="techs-container" id="techs-tab"></div>
+        <div class="skills-wrapper">
+            <h2 data-localize="skillstitle" class="skills-title"></h2>
+            <div class="skills-container" id="skills-tab"></div>
+        </div>
+        <div class="techs-wrapper">
+            <h2 data-localize="techstitle" class="techs-title"></h2>
+            <div class="techs-container" id="techs-tab"></div>
+        </div>
     </div>
+    
 
     <div class="section" id="projects">
         <h2>Section 3</h2>

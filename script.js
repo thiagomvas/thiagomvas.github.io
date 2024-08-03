@@ -1,3 +1,5 @@
+const titleSwapDelayMs = 5000;
+
 let titles = [];
 let skills = [];
 let techs = [];
@@ -119,7 +121,7 @@ function animateText(selector, delay, interval, n) {
 document.addEventListener('DOMContentLoaded', () => {
     const userLang = getBrowserLanguage();
     loadLanguage(userLang);
-    animateText('#title', 30, 15000, 3);
+    animateText('#title', 30, titleSwapDelayMs, 3);
 });
 
 
