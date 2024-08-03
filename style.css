@@ -215,3 +215,73 @@ body, html {
     color: white; /* Adjust text color as needed */
 }
 
+
+.projects-container {
+    padding: 16px;
+}
+
+.projects-title {
+    font-size: 24px; /* Adjust font size as needed */
+    color: white; /* Adjust text color as needed */
+    text-align: center; /* Center align text */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Optional: underline for emphasis */
+    margin-bottom: 10px;
+}
+
+.project-tab {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+}
+
+
+.project-panel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height to ensure uniformity */
+    background-size: cover; /* Ensures the image covers the panel */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-panel:hover {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+.project-panel:hover .project-overlay {
+    opacity: 1; /* Shows the overlay on hover */
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.project-description {
+    margin: 8px 0 0;
+    font-size: 1em;
+}

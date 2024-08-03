@@ -3,6 +3,7 @@ const titleSwapDelayMs = 5000;
 let titles = [];
 let skills = [];
 let techs = [];
+let projects = [];
 
 let locale = "";
 
@@ -30,6 +31,7 @@ function loadLanguage(lang) {
             locale = data;
             titles = data.titles;
             skills = data.skills;
+            projects = data.projects;
             techs = data.technologies;
             console.log(techs);
             document.querySelectorAll('[data-localize]').forEach(element => {
@@ -40,6 +42,7 @@ function loadLanguage(lang) {
             });
             populateSkills();
             populateTechs();
+            populateProjects();
         })
         .catch(error => console.error('Error loading language file:', error));
 }
@@ -47,6 +50,7 @@ function loadLanguage(lang) {
 
 function populateSkills() {
     const skillsContainer = document.getElementById('skills-tab');
+    skillsContainer.innerHTML = '';
 
     skills.forEach(skill => {
         skillsContainer.innerHTML += skillDiv(skill.iconUrl, skill.name)
@@ -54,10 +58,20 @@ function populateSkills() {
 }
 function populateTechs() {
     const skillsContainer = document.getElementById('techs-tab');
+    skillsContainer.innerHTML = '';
 
     techs.forEach(tech => {
         skillsContainer.innerHTML += skillDiv(tech.iconUrl, tech.name)
     });
+}
+function populateProjects()
+{
+    const projectsContainer = document.getElementById('projects-tab');
+    projectsContainer.innerHTML = '';
+
+    projects.forEach(project => {
+        projectsContainer.innerHTML += projectDiv(project);
+    })
 }
 
 function animateText(selector, delay, interval, n) {
@@ -132,4 +146,14 @@ const skillDiv = (iconUrl, name) => {
             <div class="skill-title">${name}</div>
         </div>
     `;
+}
+
+const projectDiv = (project) => {
+    return `
+    <a href="${project.projectLink}" target="_blank" class="project-panel" style="background-image: url('${project.projectBannerUrl}'); object-fit: contain;">
+                <div class="project-overlay">
+                    <h2 class="project-title">${project.title}</h2>
+                    <p class="project-description">${project.description}</p>
+                </div>
+            </a>`;
 }

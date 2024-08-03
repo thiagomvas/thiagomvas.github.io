@@ -32,5 +32,31 @@
         { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"}
     ],
     "projectstitle": "Personal Projects",
-    "contacttitle": "Contact" 
+    "contacttitle": "Contact" ,
+    "projects": [
+        {
+            "title": "TMath",
+            "description": "Biblioteca para C# de matemática utilizando genéricos para dar suporte a varios tipos numericos, com diversas funcionalidades adicionais.",
+            "projectBannerUrl": "",
+            "projectLink": "https://github.com/thiagomvas/TMath"
+        },
+        {
+            "title": "DotSights",
+            "description": "Rastreador de uso de tela para Windows altamente customizavel com aplicação CLI para visualizar os dados através de tabelas e graficos no terminal.",
+            "projectBannerUrl": "",
+            "projectLink": "https://github.com/thiagomvas/DotSights"
+        },
+        {
+            "title": "Basalt",
+            "description": "Uma framework para desenvolvimento de jogos onde é possivel customizar uma engine própria, permitindo escolher implementações para sistemas como renderizadores, simuladores de fisica, sistema de som, etc.",
+            "projectBannerUrl": "",
+            "projectLink": "https://github.com/thiagomvas/Basalt"
+        },
+        {
+            "title": "SharpTables",
+            "description": "Biblioteca para C# para visualizar e formatar dados utilizando tabelas e graficos no terminal. Rápido e facil de utilizar, além de completamente customizavel, incluindo os caracteres utilizados para renderizar tudo",
+            "projectBannerUrl": "",
+            "projectLink": "https://github.com/thiagomvas/SharpTables"
+        }
+    ]
 }
