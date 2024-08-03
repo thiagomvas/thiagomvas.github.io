@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+    background-color: #22092C;
+    color: white;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    z-index: 1000;
+}
+
+.top-bar a {
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.top-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.background {
+    background-image: url(Assets/portfoliobg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text inside flex container */
+    color: white;
+    padding-top: 50px; /* To avoid overlap with top bar */
+    overflow: hidden; /* Ensure no overflow from title affects layout */
+    position: relative; /* Relative positioning to contain absolute elements */
+}
+
+.content {
+    padding: 20px;
+    margin-top: 50px; /* To account for the top bar */
+}
+
+.section {
+    padding: 50px 20px;
+    height: 100vh;
+}
+
+.hero {
+    font-size: 36px;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.primary {
+    color: #BE3144;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjusted for better visibility */
+    color: #000; /* Changed to black for contrast */
+    text-align: center;
+    padding: 5px 10px; /* Added some padding */
+    border-radius: 6px;
+    font-size: 16px; /* Adjusted font size */
+    position: absolute;
+    z-index: 9999; /* Ensure it's on top */
+    top: 125%; /* Move tooltip below the element */
+    left: 50%;
+    margin-left: -60px; /* Adjust based on tooltip width */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -10px; /* Position the arrow above the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent; /* Arrow pointing up */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-icons img {
+    display: block; /* Remove any inline display issues */
+    margin: 0;
+    padding: 0;
+    filter: invert(1) brightness(100%) grayscale(100%);
+}
+
+
+.social-icons img {
+    display: block; /* Remove any inline display issues */
+    margin: 0;
+    padding: 0;
+    filter: invert(1) brightness(100%) grayscale(100%);
+}
+
+
