@@ -63,6 +63,8 @@
             "projectBannerUrl": "Assets/Projects/CircuitSim.png",
             "projectLink": "https://github.com/thiagomvas/CircuitSim"
         }
-    ]
+    ],
+    "contactheader": "Entre em contato",
+    "contactmessage": "Se você gostaria de entrar em contato comigo, pode-rá por esses meios: "
     
 }
