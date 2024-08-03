@@ -34,29 +34,36 @@
     "projectstitle": "Personal Projects",
     "contacttitle": "Contact" ,
     "projects": [
-        {
-            "title": "TMath",
-            "description": "Biblioteca para C# de matemática utilizando genéricos para dar suporte a varios tipos numericos, com diversas funcionalidades adicionais.",
-            "projectBannerUrl": "",
-            "projectLink": "https://github.com/thiagomvas/TMath"
-        },
-        {
-            "title": "DotSights",
-            "description": "Rastreador de uso de tela para Windows altamente customizavel com aplicação CLI para visualizar os dados através de tabelas e graficos no terminal.",
-            "projectBannerUrl": "",
-            "projectLink": "https://github.com/thiagomvas/DotSights"
-        },
-        {
-            "title": "Basalt",
-            "description": "Uma framework para desenvolvimento de jogos onde é possivel customizar uma engine própria, permitindo escolher implementações para sistemas como renderizadores, simuladores de fisica, sistema de som, etc.",
-            "projectBannerUrl": "",
-            "projectLink": "https://github.com/thiagomvas/Basalt"
-        },
-        {
-            "title": "SharpTables",
-            "description": "Biblioteca para C# para visualizar e formatar dados utilizando tabelas e graficos no terminal. Rápido e facil de utilizar, além de completamente customizavel, incluindo os caracteres utilizados para renderizar tudo",
-            "projectBannerUrl": "",
-            "projectLink": "https://github.com/thiagomvas/SharpTables"
-        }
-    ]
+    {
+        "title": "TMath",
+        "description": "A C# math library using generics to support various numeric types, with additional functionalities.",
+        "projectBannerUrl": "Assets/Projects/TMath.png",
+        "projectLink": "https://github.com/thiagomvas/TMath"
+    },
+    {
+        "title": "DotSights",
+        "description": "Highly customizable screen usage tracker for Windows with a CLI application to view data through tables and graphs in the terminal.",
+        "projectBannerUrl": "Assets/Projects/DotSights.png",
+        "projectLink": "https://github.com/thiagomvas/DotSights"
+    },
+    {
+        "title": "Basalt",
+        "description": "A game development framework where you can customize your own engine, allowing you to choose implementations for systems like renderers, physics simulators, sound systems, etc.",
+        "projectBannerUrl": "Assets/Projects/basaltbannerwide.png",
+        "projectLink": "https://github.com/thiagomvas/Basalt"
+    },
+    {
+        "title": "SharpTables",
+        "description": "A C# library for viewing and formatting data using tables and graphs in the terminal. Fast and easy to use, and completely customizable, including the characters used for rendering everything.",
+        "projectBannerUrl": "Assets/Projects/SharpTables.png",
+        "projectLink": "https://github.com/thiagomvas/SharpTables"
+    },
+    {
+        "title": "CircuitSim",
+        "description": "An electrical circuit simulator made in C# and rendered using Raylib.",
+        "projectBannerUrl": "Assets/Projects/CircuitSim.png",
+        "projectLink": "https://github.com/thiagomvas/CircuitSim"
+    }
+]
+
 }

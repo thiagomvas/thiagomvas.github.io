@@ -35,13 +35,13 @@
         {
             "title": "TMath",
             "description": "Biblioteca para C# de matemática utilizando genéricos para dar suporte a varios tipos numericos, com diversas funcionalidades adicionais.",
-            "projectBannerUrl": "",
+            "projectBannerUrl": "Assets/Projects/TMath.png",
             "projectLink": "https://github.com/thiagomvas/TMath"
         },
         {
             "title": "DotSights",
             "description": "Rastreador de uso de tela para Windows altamente customizavel com aplicação CLI para visualizar os dados através de tabelas e graficos no terminal.",
-            "projectBannerUrl": "",
+            "projectBannerUrl": "Assets/Projects/DotSights.png",
             "projectLink": "https://github.com/thiagomvas/DotSights"
         },
         {
@@ -53,8 +53,15 @@
         {
             "title": "SharpTables",
             "description": "Biblioteca para C# para visualizar e formatar dados utilizando tabelas e graficos no terminal. Rápido e facil de utilizar, além de completamente customizavel, incluindo os caracteres utilizados para renderizar tudo",
-            "projectBannerUrl": "",
+            "projectBannerUrl": "Assets/Projects/SharpTables.png",
             "projectLink": "https://github.com/thiagomvas/SharpTables"
+        },
+        {
+            
+            "title": "CircuitSim",
+            "description": "Simulador de circuitos eletricos feito em C# e renderizado utilizando Raylib",
+            "projectBannerUrl": "Assets/Projects/CircuitSim.png",
+            "projectLink": "https://github.com/thiagomvas/CircuitSim"
         }
     ]
     
