@@ -9,27 +9,32 @@
         "Back End Developer"
     ],    
     "aboutmetitle" : "About me",
-    "aboutme": "I am a bachelor's student in Computer Science at the Federal University of Sergipe, and a voluntary member of SofTeam - the Junior Computing Company of DCOMP - UFS. I mainly develop using C# and .NET and its technologies, with knowledge in Dart, C, C++, and JavaScript.",
+    "aboutme": "I am a bachelor's student in Computer Science at the Federal University of Sergipe, and a voluntary member of SofTeam - the Junior Computing Company of DCOMP - UFS. I mainly develop using C# and .NET and its technologies, with knowledge in Dart, C, C++, JavaScript and others.",
     "skillstitle": "Languages",
     "techstitle": "Technologies",
     "skills":  [
-        { "iconUrl": "Assets/csharp.png", "name": "C#"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 2"},
-        { "iconUrl": "Assets/github.svg", "name": "GitHub 3"}
+        { "iconUrl": "Assets/csharp.svg", "name": "C#"},
+        { "iconUrl": "Assets/cplusplus.svg", "name": "C++"},
+        { "iconUrl": "Assets/c.svg", "name": "C"},
+        { "iconUrl": "Assets/dart.svg", "name": "Dart"},
+        { "iconUrl": "Assets/java.svg", "name": "Java"},
+        { "iconUrl": "Assets/html.svg", "name": "HTML"},
+        { "iconUrl": "Assets/css.svg", "name": "CSS"},
+        { "iconUrl": "Assets/javascript.svg", "name": "JavaScript"},
+        { "iconUrl": "Assets/typescript.svg", "name": "TypeScript"}
+        
     ],
     "technologies": [
         { "iconUrl": "Assets/dotnet.svg", "name": ".NET"},
         { "iconUrl": "Assets/blazor.svg", "name": "Blazor"},
         { "iconUrl": "Assets/dotnet.svg", "name": "ASP.NET"},
         { "iconUrl": "Assets/azure.svg", "name": "Azure Services"},
+        { "iconUrl": "Assets/redis.svg", "name": "Redis"},
         { "iconUrl": "Assets/flutter.svg", "name": "Flutter"},
-        { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"}
+        { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"},
+        { "iconUrl": "Assets/avalonia.jpg", "name": "Avalonia UI"},
+        { "iconUrl": "Assets/mongodb.svg", "name": "MongoDB"},
+        { "iconUrl": "Assets/unity.svg", "name": "Unity Engine"}
     ],
     "projectstitle": "Personal Projects",
     "contacttitle": "Contact" ,
