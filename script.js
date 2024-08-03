@@ -1,4 +1,4 @@
-const titles = [
+let titles = [
     "Software Developer", 
     "Computer Science Undergrad", 
     "C# Developer", 
@@ -26,6 +26,7 @@ function loadLanguage(lang) {
             return response.json();
         })
         .then(data => {
+            titles = data.titles;
             document.querySelectorAll('[data-localize]').forEach(element => {
                 const key = element.getAttribute('data-localize');
                 if (data[key]) {

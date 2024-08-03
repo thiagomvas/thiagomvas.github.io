@@ -1,3 +1,9 @@
 {
-    "greeting": "Opa!"
+    "greeting": "Opa!",
+    "titles": [
+        "Programador C#",
+        "Desenvolvedor Back End",
+        "Estudante de Ciências da Computação",
+        "Desenvolvedor de Software"
+    ]
 }

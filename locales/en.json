@@ -1,3 +1,9 @@
 {
-    "greeting": "Hello there!"
+    "greeting": "Hello there!",
+    "titles": [
+        "Software Developer", 
+        "Computer Science Undergrad", 
+        "C# Developer", 
+        "Back End Developer"
+    ]
 }
