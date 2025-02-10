@@ -1,0 +1,86 @@
+{
+    "greeting": "Hey! I'm",
+    "subtitle": "And I'm a Full Stack Software Engineer",
+    "aboutme": "Sou estudante de Ciência da Computação e trabalho como gerente de projetos e engenheiro de software na Softeam. Minha principal expertise está em C#/.NET e seu ecossistema, com experiência adicional em C, C++, Dart, Java, JavaScript e outras tecnologias.",
+    "seemore": "Veja mais...",
+    "skilltitle": "Habilidades",
+    "technologiestitle": "Tecnologias",
+    "projectstitle": "Projetos",
+    "skills":  [
+        { "iconUrl": "Assets/csharp.svg", "name": "C#"},
+        { "iconUrl": "Assets/cplusplus.svg", "name": "C++"},
+        { "iconUrl": "Assets/c.svg", "name": "C"},
+        { "iconUrl": "Assets/dart.svg", "name": "Dart"},
+        { "iconUrl": "Assets/java.svg", "name": "Java"},
+        { "iconUrl": "Assets/html.svg", "name": "HTML"},
+        { "iconUrl": "Assets/css.svg", "name": "CSS"},
+        { "iconUrl": "Assets/javascript.svg", "name": "JavaScript"},
+        { "iconUrl": "Assets/typescript.svg", "name": "TypeScript"}
+    ],
+
+    "technologies": [
+        { "iconUrl": "Assets/dotnet.svg", "name": ".NET"},
+        { "iconUrl": "Assets/blazor.svg", "name": "Blazor"},
+        { "iconUrl": "Assets/dotnet.svg", "name": "ASP.NET"},
+        { "iconUrl": "Assets/azure.svg", "name": "Azure Services"},
+        { "iconUrl": "Assets/postgresql.svg", "name": "PostgreSQL"},
+        { "iconUrl": "Assets/sqlite.svg", "name": "Sqlite"},
+        { "iconUrl": "Assets/redis.svg", "name": "Redis"},
+        { "iconUrl": "Assets/flutter.svg", "name": "Flutter"},
+        { "iconUrl": "Assets/firebase-1.svg", "name": "Firebase"},
+        { "iconUrl": "Assets/avalonia.jpg", "name": "Avalonia UI"},
+        { "iconUrl": "Assets/mongodb.svg", "name": "MongoDB"},
+        { "iconUrl": "Assets/unity.svg", "name": "Unity Engine"}
+    ],
+    "projects": [
+    {
+        "title": "Basalt",
+        "description": "Uma biblioteca de desenvolvimento de jogos altamente personalizável onde cada componente pode ser alterado.",
+        "projectBannerUrl": "Assets/Projects/basaltbannerwide.png",
+        "projectLink": "https://github.com/thiagomvas/Basalt"
+    },
+    {
+        "title": "TMath",
+        "description": "Uma poderosa e extensa biblioteca matemática para tipos numéricos genéricos.",
+        "projectBannerUrl": "Assets/dotnet.svg",
+        "projectLink": "https://github.com/thiagomvas/Basalt"
+    },
+    {
+        "title": "SharpTables",
+        "description": "Uma biblioteca altamente personalizável e versátil para escrever tabelas e gráficos no console.",
+        "projectBannerUrl": "Assets/Projects/sharptables.webp",
+        "projectLink": "https://github.com/thiagomvas/SharpTables"
+    },
+    {
+        "title": "tmplt",
+        "description": "Uma ferramenta CLI para criar templates de estrutura de arquivos com variáveis altamente configuráveis.",
+        "projectBannerUrl": "Assets/Projects/tmplt.jpg",
+        "projectLink": "https://github.com/thiagomvas/tmplt"
+    },
+    {
+        "title": "SteamWebSharp",
+        "description": "Um Wrapper da API Web do Steam onde cada ponto é sua própria interface. Suporta Reintentos em falhas, Cache com uma interface de provedor customizada, Logging através de ILogger e muito mais.",
+        "projectBannerUrl": "Assets/Projects/SteamWebSharp.jpg",
+        "projectLink": "https://github.com/thiagomvas/SteamWebSharp"
+    },
+    {
+        "title": "Mapeteer",
+        "description": "Mais um mapeador de objetos para C#. Suporta vinculação automática com base nos nomes das propriedades, conversão de tipos configurável e muito mais.",
+        "projectBannerUrl": "Assets/dotnet.svg",
+        "projectLink": "https://github.com/thiagomvas/Mapeteer"
+    },
+    {
+        "title": "Phasmosheet",
+        "description": "Um site de cheatsheet para identificar diferentes fantasmas em Phasmophobia.",
+        "projectBannerUrl": "Assets/Projects/Phasmosheet.png",
+        "projectLink": "https://github.com/thiagomvas/Phasmosheet"
+    },
+    {
+        "title": "Mindustry Toolbox",
+        "description": "Um navegador de setores e calculadora de rendimento de recursos para otimizar recursos no Mindustry.",
+        "projectBannerUrl": "Assets/Projects/MindustryToolbox.png",
+        "projectLink": "https://github.com/thiagomvas/MindustryToolbox"
+    }
+]
+
+}

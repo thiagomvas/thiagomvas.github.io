@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projects.css">
+
+    
+    <!-- Link the json files -->
+    <script src="locales/en.json" id="en" type="application/json"></script>
+    <script src="locales/pt.json" id="pt" type="application/json"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <title>Thiago M. Vasconcelos</title>
+</head>
+<body>
+
+<div class="hero" style="margin: 0; padding: 0;">
+    <div>
+        <h1 data-localize="greeting" style="margin: 0; font-size: 30px">Hey! I'm</h1>
+        <h1 style="margin: 0;">Thiago Menezes</h1>
+        <p data-localize="subtitle">And i'm a software engineer</p>
+    </div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--primary-100)" opacity="0.2"/>
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--primary-100)" opacity="0.4"/>
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--primary-100)" opacity="0.6"/>
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--primary-100)" opacity="1"/>
+        </g>
+    </svg>
+</div>
+
+<div class="about-me-container">
+    <div class="about-content">
+        <h2 class="about-title">About me</h2>
+        <p data-localize="aboutme" class="about-text">
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="Assets/1700862378277.jfif" alt="Thiago M. Vasconcelos">
+    </div>
+</div>
+
+<div class="skills-container">
+    <h2 class="skills-title" data-localize="skilltitle">Skills</h2>
+    <div id="skills-tab" class="skills-grid"></div>
+</div>
+
+<div class="techs-container">
+    <h2 class="techs-title" data-localize="technologiestitle">Technologies</h2>
+    <div id="techs-tab" class="skills-grid"></div>
+</div>
+
+<div class="projects-container">
+    <h2 class="projects-title" data-localize="projectstitle">Projects</h2>
+    <div id="projects-tab" class="projects-grid"></div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const lang = getBrowserLanguage();
+        loadLanguage(lang);
+    });
+</script>
+</body>
+</html>

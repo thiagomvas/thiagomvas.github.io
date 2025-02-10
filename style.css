@@ -1,0 +1,66 @@
+:root {
+    /* Primary Colors */
+    --primary-00: #ff9e57; /* Sunset Orange */
+    --primary-20: #ff7b50; /* Warm Coral */
+    --primary-40: #ff5e4c; /* Deep Sunset Red */
+    --primary-60: #d94641; /* Burnt Red */
+    --primary-80: #a7323f; /* Dark Crimson */
+    --primary-100: #732133; /* Deep Maroon */
+    --primary-gradient: linear-gradient(135deg, var(--primary-20), var(--primary-60), var(--primary-80)); /* Sunset Sky */
+
+    /* Background Colors */
+    --background-light: #ffd3a5; /* Soft Peach */
+    --background-medium: #ffac81; /* Warm Apricot */
+    --background-dark: #703d57; /* Dusky Purple */
+    --background-gradient: linear-gradient(to bottom, #ff9e57, #ff5e4c, #703d57); /* Sunset Sky */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Fira Code', monospace;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--primary-gradient);
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -5px; /* Helps close any gap */
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: var(--primary-40);
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-20);
+}
