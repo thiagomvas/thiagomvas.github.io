@@ -1,0 +1,185 @@
+.experience-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--primary-60);
+  color: white;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* Vertical line (timeline) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--primary-20);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container for experience entries */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+/* Circle indicator for each experience */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary-100);
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Experience on the left */
+.left {
+  left: 0;
+}
+
+/* Experience on the right */
+.right {
+  left: 50%;
+}
+
+/* Arrow for left-sided experience */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--primary-80);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--primary-80);
+}
+
+/* Arrow for right-sided experience */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--primary-80);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--primary-80) transparent transparent;
+}
+
+.left::after {
+  right: -17px; /* Ball on the left side */
+}
+
+.right::after {
+  left: -17px; /* Ball on the right side */
+}
+
+/* The content of each experience */
+.content {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--primary-80);
+  position: relative;
+  border-radius: 6px;
+  text-align: left;
+  justify-content: space-between; /* Space between logo and text */
+}
+
+/* Optional logo for each experience */
+.company-logo {
+  max-width: 100px;
+}
+
+/* Adjust for left-side logo */
+.left .company-logo {
+  order: -1; /* Move the logo to the left side */
+}
+
+/* Adjust for right-side logo */
+.right .company-logo {
+  order: 1; /* Keep the logo on the right side */
+}
+
+@media (max-width: 768px) {
+  /* Ensure experience containers are full width and centered */
+  .container {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Less margin between items */
+    padding: 10px 20px;
+  }
+
+  /* Stack logo and text vertically */
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+    justify-content: start;
+  }
+
+  /* Move company logo below content */
+  .company-logo {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add space between logo and text */
+  }
+
+  /* Hide arrows for mobile */
+  .left::before, .right::before {
+    display: none; /* Hide arrows */
+  }
+
+  /* Hide the vertical timeline line on mobile */
+  .timeline::after {
+    display: none; /* Remove the vertical line on mobile */
+  }
+
+  /* Center circle indicator */
+  .left::after, .right::after {
+    left: 50%;
+    right: auto;
+  }
+
+  /* Remove left/right side positioning */
+  .container.left, .container.right {
+    left: 0 !important;
+  }
+
+  /* Adjust content padding for mobile */
+  .content {
+    padding: 20px 15px;
+  }
+
+  /* Hide the ball (circle indicator) on mobile */
+  .container::after {
+    display: none; /* Hide the circle (ball) indicator */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  /* Further adjust logo size for smaller mobile screens */
+  .company-logo {
+    max-width: 80px;
+  }
+}
