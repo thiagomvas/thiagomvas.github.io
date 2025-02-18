@@ -58,12 +58,20 @@
             "name": "ASP.NET"
         },
         {
+            "iconUrl": "Assets/aspire.svg",
+            "name": ".NET Aspire"
+        },
+        {
             "iconUrl": "Assets/azure.svg",
             "name": "Azure Services"
         },
         {
             "iconUrl": "Assets/postgresql.svg",
             "name": "PostgreSQL"
+        },
+        {
+            "iconUrl": "Assets/rabbitmq.svg",
+            "name": "RabbitMQ"
         },
         {
             "iconUrl": "Assets/sqlite.svg",
