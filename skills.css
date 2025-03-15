@@ -3,6 +3,7 @@
     padding: 50px 20px;
     background: var(--background-dark);
     color: white;
+    margin: 0;
 }
 
 .skills-title, .techs-title {

@@ -6,6 +6,8 @@
     "skilltitle": "Skills",
     "technologiestitle": "Technologies",
     "projectstitle": "Projects",
+    "footerheader": "Let's Get In Touch!",
+    "footerdescription": "Feel free to reach out if you have any questions or would like to collaborate on a project. I'm always open to new opportunities and ideas!",
     "skills": [
         {
             "iconUrl": "Assets/csharp.svg",

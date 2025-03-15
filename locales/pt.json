@@ -1,11 +1,13 @@
 {
-    "greeting": "Hey! I'm",
-    "subtitle": "And I'm a Full Stack Software Engineer",
+    "greeting": "Opa! Me chamo",
+    "subtitle": "E sou um Engenheiro de Software Full Stack",
     "aboutme": "Sou estudante de Ciência da Computação e trabalho como gerente de projetos e engenheiro de software na Softeam. Minha principal expertise está em C#/.NET e seu ecossistema, com experiência adicional em C, C++, Dart, Java, JavaScript e outras tecnologias.",
     "seemore": "Veja mais...",
     "skilltitle": "Habilidades",
     "technologiestitle": "Tecnologias",
     "projectstitle": "Projetos",
+    "footerheader": "Vamos nos conectar!",
+    "footerdescription": "Fique à vontade para entrar em contato caso tenha alguma dúvida ou queira colaborar em um projeto. Estou sempre aberto a novas oportunidades e ideias!",
     "skills": [
         {
             "iconUrl": "Assets/csharp.svg",
