@@ -1,3 +1,5 @@
+import ReactLogo from '../assets/react.svg';
+
 import './Hero.css';
 
 export default function Hero() {
@@ -12,20 +14,17 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="social-links">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <span className="label">GitHub</span>
+            <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Thiago Vasconcelos" width={32} height={32} />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <span className="label">LinkedIn</span>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <span className="label">Twitter</span>
+            <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Thiago Vasconcelos" width={32} height={32} />
             </a>
           </div>
         </div>
 
         {/* Image Section */}
         <div className="hero-image">
-          <img src="/logo-softeam.svg" alt="Thiago Vasconcelos" width={400} height={400} />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Thiago Vasconcelos" width={400} height={400} />
         </div>
       </div>
     </section>

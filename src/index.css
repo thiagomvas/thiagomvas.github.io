@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primary: #f15c5c;
+}
+
 /* Reset default browser margin/padding */
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.white-icon {
+  fill: white !important;    /* for SVG fill */
+  color: white !important;   /* for font/icon fonts */
+  filter: brightness(0) invert(1); /* fallback for img/svg without fill */
 }
