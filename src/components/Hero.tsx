@@ -1,5 +1,3 @@
-import ReactLogo from '../assets/react.svg';
-
 import './Hero.css';
 
 export default function Hero() {
@@ -13,10 +11,10 @@ export default function Hero() {
 
           {/* Social Icons */}
           <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/thiagomvas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Thiago Vasconcelos" width={32} height={32} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/thiago-m-vasconcelos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Thiago Vasconcelos" width={32} height={32} />
             </a>
           </div>
