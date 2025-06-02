@@ -1,13 +1,9 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.tsx'
 
-export default function App() {
-  return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Add more routes as needed */}
-      </Routes>
-    </HashRouter>
-  );
-}
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
