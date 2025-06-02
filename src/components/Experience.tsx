@@ -12,17 +12,15 @@ export default function Experience() {
           </div>
 
           <div className="experience-timeline">
-            {exp.positions.map((position, i) => (
-              <div className="timeline-item" key={i}>
-                <div className="timeline-content">
-                  <h3>
-                    {position.title}{' '}
-                    <span className="period">{formatDateRange(position.start, position.end)}</span>
-                  </h3>
-                  <p>{position.description}</p>
-                </div>
+          {exp.positions.map((position, i) => (
+            <div className="timeline-item" key={i}>
+              <div className="timeline-content">
+                <h3>{position.title} <span className="period">— {formatDateRange(position.start, position.end)}</span></h3>
+                <div className="type">{position.type}</div>
+                <p>{position.description}</p>
               </div>
-            ))}
+            </div>
+          ))}
           </div>
         </div>
       ))}

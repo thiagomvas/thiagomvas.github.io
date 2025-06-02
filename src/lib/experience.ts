@@ -1,5 +1,9 @@
+import SofteamLogo from "/softeam.png";
+import JetsalesLogo from "/jetsales.png";
+
 export type Position = {
     title: string;
+    type: 'Full-time' | 'Part-time' | 'Internship' | 'Contract' | 'Freelance'; // added
     start: string;
     end: string | 'present';
     description: string;
@@ -13,36 +17,43 @@ export type Position = {
   
   export const experiences: ExperienceCompany[] = [
     {
-      company: 'TechNova',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+      company: 'JetSales Brasil',
+      logo: JetsalesLogo,
       positions: [
         {
-          title: 'Full Stack Developer',
-          start: '2022-01',
+          title: 'Jr. Web Developer',
+          type: 'Internship',           // added
+          start: '2025-06',
           end: 'present',
-          description: 'Developing scalable web apps with React, Node.js, and PostgreSQL. Focused on performance and UX.',
-        },
-        {
-          title: 'Frontend Developer',
-          start: '2020-06',
-          end: '2021-12',
-          description: 'Built UI components and improved SPA performance.',
+          description: 'Automating internal workflows using n8n and ActiveCampaign, integrating multiple third-party services to streamline business processes and improve operational efficiency.',
         },
       ],
     },
     {
-      company: 'DevStart',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+      company: 'SofTeam - Empresa Júnior de Computação da UFS',
+      logo: SofteamLogo,
       positions: [
         {
-          title: 'Intern Developer',
-          start: '2020-01',
-          end: '2020-05',
-          description: 'Contributed to frontend tasks and testing with React.',
+            title: 'Project Manager',
+            type: 'Internship',          // added
+            start: '2025-03',
+            end: 'present',
+            description: 'Directly collaborate with clients to define project scope and requirements. Organize and oversee teams to execute contracts efficiently, handling contract writing and service pricing. Act as a Scrum Master, facilitating agile practices, backlog planning, and sprint execution. Promote team development through training initiatives, ensuring continuous growth and project success.',
+        },
+        {
+          title: 'Full-Stack Developer',
+          type: 'Internship',          // added
+          start: '2023-12',
+          end: '2025-02',
+          description: 'Developed software while managing teams and collaborating directly with clients to align project goals. Led contract negotiations, service pricing, and project execution to ensure successful deliveries..',
         },
       ],
     },
   ];
+  
+  // You can display it in your component like:
+  // <h3>{position.title} <span className="type">({position.type})</span> <span className="period">— {formatDateRange(position.start, position.end)}</span></h3>
+  
   
   export function formatDateRange(start: string, end: string | 'present'): string {
     const startDate = new Date(`${start}-01`);
