@@ -82,3 +82,25 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
   
+  .social-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cv-download select {
+    background: #f15c5c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cv-download select:hover {
+    background: #e04b4b;
+  }
